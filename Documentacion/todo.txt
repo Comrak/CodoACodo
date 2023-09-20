@@ -44,3 +44,10 @@ que mangas van a estar{
 
 buscar "inspiracion" para el diseño de pagina
 
+de que se encarga cada uno{
+    Mati.innerTrabajo = Jose
+    EzeA
+    EzeP
+    Jose (Nada)
+    Lean
+}
