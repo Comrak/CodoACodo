@@ -21,20 +21,24 @@ for (let i = 0; i < imagenes.length; i++) {
         if (this.id == "OnePiece") {
             //seteo la URL en el caso de OnePiece
             url = urlRoot + id + "/1088/OP-1088-" + pagina + ".jpeg"
+            
+            derecha.onclick = function() {
+                pagina++
+                url = urlRoot + id + "/1088/OP-1088-" + pagina + ".jpeg"
+                imgModal.src = url
+            }
+            izquierda.onclick = function() {
+                pagina--
+                url = urlRoot + id + "/1088/OP-1088-" + pagina + ".jpeg"
+                imgModal.src = url
+            }
+        }else{
+            url = urlRoot + "error404-2.png"
         }
         //asigno la url a la imagen
         imgModal.src = url
         modal.style.display = "block";
-        derecha.onclick = function() {
-            pagina++
-            url = urlRoot + id + "/1088/OP-1088-" + pagina + ".jpeg"
-            imgModal.src = url
-        }
-        izquierda.onclick = function() {
-            pagina--
-            url = urlRoot + id + "/1088/OP-1088-" + pagina + ".jpeg"
-            imgModal.src = url
-        }
+        
     })
 }
 span.onclick = function() {
