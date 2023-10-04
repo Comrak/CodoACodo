@@ -27,7 +27,7 @@ generos{
 }
 
 que mangas van a estar{
-    one piece
+    one piece -- agregado 1088
     naruto
     bleach
     neon genesis evangelion
@@ -45,9 +45,9 @@ que mangas van a estar{
 buscar "inspiracion" para el diseño de pagina
 
 de que se encarga cada uno{
-    Mati.innerTrabajo = Jose
+    Mati
     EzeA
     EzeP
-    Jose (Nada)
+    Jose: Directorio de mangas y reader
     Lean
 }
