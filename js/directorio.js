@@ -21,13 +21,15 @@ for (let i = 0; i < imagenes.length; i++) {
         if (this.id == "OnePiece") {
             //seteo la URL en el caso de OnePiece
             url = urlRoot + id + "/1088/OP-1088-" + pagina + ".jpeg"
-            
+            //le asigno eventos a los botones de flecha
             derecha.onclick = function() {
+                //cambio la pagina y seteo una nueva url
                 pagina++
                 url = urlRoot + id + "/1088/OP-1088-" + pagina + ".jpeg"
                 imgModal.src = url
             }
             izquierda.onclick = function() {
+                //cambio la pagina y seteo una nueva url
                 pagina--
                 url = urlRoot + id + "/1088/OP-1088-" + pagina + ".jpeg"
                 imgModal.src = url
