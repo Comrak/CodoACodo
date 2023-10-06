@@ -1,0 +1,78 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #334f52; */
+    /* bg-image = banner */
+}
+
+.logo{
+    margin: 1.3em ;
+    width: 7em ;
+    border-radius: 45%;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    /* background-color: #334f52; */
+}
+ul li{
+    margin: 1em;
+    list-style: none;
+}
+ul li img{
+    width: 1.5em;
+    border: solid black;
+    border-radius: 1.3em;
+}
+
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbarEle {
+    float: left;
+    border-right: 1px solid #bbb;
+    transform: scale(1.3);
+    margin: 2.2em;
+  }
+  
+  .navbarEle a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+  
+  .navbarEle:last-child {
+    border-right: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  .navbarEle a:hover {
+    background-color: red;
+    color: black;
+
+    transform: scale(1.2);
+  }
+  
+  .active {
+    background-color: black;
+  }
+  .fondoBanner{
+    background-image: url("../img/banerejemplo1.webp");
+    background-size: cover;
+  }
