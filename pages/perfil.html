@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/prefil.css">
 </head>
+
 <body>
+
+    <div class="inicio_de_sesion">
+        <form>
+            <label for="iniciomail">E-Mail de usuario</label>
+            <input type="email" name="iniciomail" id="inicio_mail" required>
+            <label for="iniciopass">Contraseña</label>
+            <input type="password" name="iniciopass" id="iniciopass" required>
+            <label for="mantener_iniciado">¿Desea mantener su sesion iniciada?</label>
+            <input type="checkbox" name="mantener_iniciado" id="mantener_iniciado">
+            <!-- olvidaste contraseña/mail + registrarse -->
+            <input type="button" value="Iniciar Sesion">
+        </form>
+    </div>
+
+    <div class="registro desactivado">
+        <label for="">Ingrese su E-Mail</label>
+        <input type="email" name="reg_email1" id="reg_email1" required>
+        <label for="">Confirme su E-Mail</label>
+        <input type="email" name="reg_email2" id="reg_email2" required>
+        <label for="">Nombre de Usuario</label>
+        <input type="text" name="reg_username" id="reg_username" required>
+        <label for="">Nombre</label>
+        <input type="text" name="reg_nombre" id="reg_nombre">
+        <label for="">Contraseña</label>
+        <input type="password" name="re_pass1" id="re_pass1" required>
+        <label for="">Confirme su Contraseña</label>
+        <input type="password" name="reg_pass2" id="reg_pass2" required>
+        <!-- captcha? -->
+        <input type="button" value="Registrarse">
+        <input type="button" value="Iniciar Sesion">
+    </div>
     
+    <div class="main desactivado">
+        <nav class="fondoBanner">
+            <!-- Logo -->
+            <a href="./index.html" class="color"><img class="logo" src="../img/logo.png" alt="NOMBRE PAGINA"></a>
+            <ul class="navbar">
+                <li class="navbarEle"><a class="active" href="probando.html">Home</a></li>
+                <li class="navbarEle"><a class="active" href="directorio.html">Directorio de mangas</a></li>
+                <li class="navbarEle"><a class="active" href="about.html">Ranking</a></li>
+                <li class="navbarEle"><a class="active" href="contact.html">Contacto</a></li>
+                <li class="navbarEle"><a class="active" href="register.html">Registrese</a></li>
+            </ul>
+        </nav>
+        <main class="body_perfil">
+            <div class="icono_y_banner"> <!-- banner de fondo de perfil -->
+                <img src="" alt="" class="fotoUsuario">
+            </div>
+            <div class="info_princ">
+                <h2 class="nombre_usuario">NOMBRE USUARIO</h2>
+                <p class="descripcion">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.
+
+                    Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. Duis a arcu convallis, gravida purus eget, mollis diam.
+                </p>
+            </div>
+            <div class="mangas_guardados">
+                <!--imagen de guardados, puede ser un p con caracter especial-->
+                <!-- lista de mangas favoritos -->
+                <!-- lista de mangas por ver -->
+            </div>
+
+
+        </main>
+        <footer>
+
+        </footer>
+    </div>
 </body>
+
 </html>
