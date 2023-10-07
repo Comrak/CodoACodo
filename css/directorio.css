@@ -1,16 +1,14 @@
 /* hacer que el body ocupe la mayor parte de la pagina */
-html, body {
-    margin: 0;
-    height: 90%;
-}
 
 /* reglas del div principal*/
 .main_dir_div {
     background-color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     height: 100%;
     width: 100%;
+    flex-wrap: wrap;
+
 }
 
 /* reglas para el texto debajo de las imagenes */
