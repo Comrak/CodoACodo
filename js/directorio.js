@@ -22,154 +22,27 @@ for (let i = 0; i < imagenes.length; i++) {
         let id = this.id
         if (this.id == "OnePiece") 
         {
-            pagina = 1
-            center.innerHTML = pagina + "/16"
-            //seteo la URL en el caso de OnePiece
-            url = urlRoot + id + "/1088/OP-1088-" + pagina + ".jpeg"
-            //le asigno eventos a los botones de flecha
-            derecha.onclick = function() {
-                //cambio la pagina y seteo una nueva url
-                if (pagina < 16) {
-                    pagina++
-                }
-                url = urlRoot + id + "/1088/OP-1088-" + pagina + ".jpeg"
-                center.innerHTML = pagina + "/16"
-                imgModal.src = url
-            }
-            izquierda.onclick = function() {
-                //cambio la pagina y seteo una nueva url
-                if (pagina > 1) {
-                    pagina--
-                }
-                url = urlRoot + id + "/1088/OP-1088-" + pagina + ".jpeg"
-                center.innerHTML = pagina + "/16"
-                imgModal.src = url
-            }
+            reader(id,16,1088,"OP","jpeg")
         }
         else if(this.id == "Naruto")
         {
-            pagina = 1
-            center.innerHTML = pagina + "/18"
-            url = urlRoot + id + "/452/NAR-452-" + pagina + ".jpeg"
-            //le asigno eventos a los botones de flecha
-            derecha.onclick = function() {
-                //cambio la pagina y seteo una nueva url
-                if (pagina < 18) {
-                    pagina++
-                }
-                url = urlRoot + id + "/452/NAR-452-" + pagina + ".jpeg"
-                center.innerHTML = pagina + "/18"
-                imgModal.src = url
-            }
-            izquierda.onclick = function() {
-                //cambio la pagina y seteo una nueva url
-                if (pagina > 1) {
-                    pagina--
-                }
-                url = urlRoot + id + "/452/NAR-452-" + pagina + ".jpeg"
-                center.innerHTML = pagina + "/18"
-                imgModal.src = url
-            }
+            reader(id,18,452,"NAR","jpeg")
         }
         else if(this.id == "Bleach")
         {
-            pagina = 1
-            center.innerHTML = pagina + "/20"
-            url = urlRoot + id + "/452/Bl-452-" + pagina + ".jpeg"
-            //le asigno eventos a los botones de flecha
-            derecha.onclick = function() {
-                //cambio la pagina y seteo una nueva url
-                if (pagina < 20) {
-                    pagina++
-                }
-                url = urlRoot + id + "/452/Bl-452-" + pagina + ".jpeg"
-                center.innerHTML = pagina + "/20"
-                imgModal.src = url
-            }
-            izquierda.onclick = function() {
-                //cambio la pagina y seteo una nueva url
-                if (pagina > 1) {
-                    pagina--
-                }
-                url = urlRoot + id + "/452/Bl-452-" + pagina + ".jpeg"
-                center.innerHTML = pagina + "/20"
-                imgModal.src = url
-            }
+            reader(id,20,452,"Bl","jpeg")
         }
         else if(this.id == "HxH")
         {
-            pagina = 1
-            center.innerHTML = pagina + "/20"
-            url = urlRoot + id + "/400/HxH-400-" + pagina + ".jpeg"
-            //le asigno eventos a los botones de flecha
-            derecha.onclick = function() {
-                //cambio la pagina y seteo una nueva url
-                if (pagina < 20) {
-                    pagina++
-                }
-                url = urlRoot + id + "/400/HxH-400-" + pagina + ".jpeg"
-                center.innerHTML = pagina + "/20"
-                imgModal.src = url
-            }
-            izquierda.onclick = function() {
-                //cambio la pagina y seteo una nueva url
-                if (pagina > 1) {
-                    pagina--
-                }
-                url = urlRoot + id + "/400/HxH-400-" + pagina + ".jpeg"
-                center.innerHTML = pagina + "/20"
-                imgModal.src = url
-            }
+            reader(id,20,400,"HxH","jpeg")
         }
         else if(this.id == "MyHeroAcademia")
         {
-            pagina = 1
-            center.innerHTML = pagina + "/16"
-            url = urlRoot + id + "/402/MHA-402-" + pagina + ".jpeg"
-            //le asigno eventos a los botones de flecha
-            derecha.onclick = function() {
-                //cambio la pagina y seteo una nueva url
-                if (pagina < 16) {
-                    pagina++
-                }
-                url = urlRoot + id + "/402/MHA-402-" + pagina + ".jpeg"
-                center.innerHTML = pagina + "/16"
-                imgModal.src = url
-            }
-            izquierda.onclick = function() {
-                //cambio la pagina y seteo una nueva url
-                if (pagina > 1) {
-                    pagina--
-                }
-                url = urlRoot + id + "/402/MHA-402--" + pagina + ".jpeg"
-                center.innerHTML = pagina + "/16"
-                imgModal.src = url
-            }
+            reader(id,16,402,"MHA","jpeg")
         }
         else if(this.id == "FairyTail")
         {
-            pagina = 1
-            center.innerHTML = pagina + "/21"
-            url = urlRoot + id + "/143/FT-143-" + pagina + ".jpeg"
-            //le asigno eventos a los botones de flecha
-            derecha.onclick = function() {
-                //cambio la pagina y seteo una nueva url
-                if (pagina < 21) {
-                    pagina++
-                }
-                url = urlRoot + id + "/143/FT-143-" + pagina + ".jpeg"
-                center.innerHTML = pagina + "/21"
-                imgModal.src = url
-            }
-            izquierda.onclick = function() {
-                //cambio la pagina y seteo una nueva url
-                if (pagina > 1) {
-                    pagina--
-                }
-                url = urlRoot + id + "/143/FT-143-" + pagina + ".jpeg"
-                center.innerHTML = pagina + "/21"
-                imgModal.src = url
-            }
+            reader(id,21,143,"FT","jpeg")
         }
         else
         {
@@ -185,4 +58,28 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 
-
+const reader = (id,maxPage,chapter,mangaShortName,imgExt)=>{
+    pagina = 1
+    center.innerHTML = `${pagina}/${maxPage}`
+    //seteo la URL en el caso de OnePiece
+    url =`${urlRoot}${id}/${chapter}/${mangaShortName}-${chapter}-${pagina}.${imgExt}`
+    //le asigno eventos a los botones de flecha
+    derecha.onclick = function() {
+        //cambio la pagina y seteo una nueva url
+        if (pagina < maxPage) {
+            pagina++
+        }
+        url =`${urlRoot}${id}/${chapter}/${mangaShortName}-${chapter}-${pagina}.${imgExt}`
+        center.innerHTML = `${pagina}/${maxPage}`
+        imgModal.src = url
+    }
+    izquierda.onclick = function() {
+        //cambio la pagina y seteo una nueva url
+        if (pagina > 1) {
+            pagina--
+        }
+        url =`${urlRoot}${id}/${chapter}/${mangaShortName}-${chapter}-${pagina}.${imgExt}`
+        center.innerHTML = `${pagina}/${maxPage}`
+        imgModal.src = url
+    }
+}
