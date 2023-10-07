@@ -30,7 +30,9 @@ for (let i = 0; i < imagenes.length; i++) {
             }
             izquierda.onclick = function() {
                 //cambio la pagina y seteo una nueva url
-                pagina--
+                if (pagina > 1) {
+                    pagina--
+                }
                 url = urlRoot + id + "/1088/OP-1088-" + pagina + ".jpeg"
                 imgModal.src = url
             }
