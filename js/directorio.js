@@ -60,26 +60,28 @@ span.onclick = function() {
 
 const reader = (id,maxPage,chapter,mangaShortName,imgExt)=>{
     pagina = 1
-    center.innerHTML = `${pagina}/${maxPage}`
-    //seteo la URL en el caso de OnePiece
-    url =`${urlRoot}${id}/${chapter}/${mangaShortName}-${chapter}-${pagina}.${imgExt}`
+    changePage(id,maxPage,chapter,mangaShortName,imgExt)
     //le asigno eventos a los botones de flecha
     derecha.onclick = function() {
         //cambio la pagina y seteo una nueva url
         if (pagina < maxPage) {
             pagina++
         }
-        url =`${urlRoot}${id}/${chapter}/${mangaShortName}-${chapter}-${pagina}.${imgExt}`
-        center.innerHTML = `${pagina}/${maxPage}`
-        imgModal.src = url
+        changePage(id,maxPage,chapter,mangaShortName,imgExt)
     }
     izquierda.onclick = function() {
         //cambio la pagina y seteo una nueva url
         if (pagina > 1) {
             pagina--
         }
-        url =`${urlRoot}${id}/${chapter}/${mangaShortName}-${chapter}-${pagina}.${imgExt}`
-        center.innerHTML = `${pagina}/${maxPage}`
-        imgModal.src = url
+        changePage(id,maxPage,chapter,mangaShortName,imgExt)
     }
+}
+const changePage = (id,maxPage,chapter,mangaShortName,imgExt)=>{
+    //seteo la url de la imagen
+    url =`${urlRoot}${id}/${chapter}/${mangaShortName}-${chapter}-${pagina}.${imgExt}`
+    //seteo el numero de pagina
+    center.innerHTML = `${pagina}/${maxPage}`
+    //asigno la imagen al modal
+    imgModal.src = url
 }
