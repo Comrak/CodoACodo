@@ -1,3 +1,244 @@
+label{
+    font-family: 'Linotype Ergo', sans-serif;
+    font-weight: bold;
+}
+
+.sesion{
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+/* ESTILO PARA INICIO DE SESION */
+
+.inicio{
+    background-color: rgb(184, 184, 184);
+    border-radius: 45px;
+    width: 300px;
+    padding: 20px; 
+    text-align: center;   
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.9);
+}
+
+.cuerpo_inicio h1{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.inicio form{
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio label{
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.inicio input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #777;
+    border-radius: 3px;
+}
+
+.inicio button{
+    background-color: skyblue;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.inicio button:hover{
+    background-color: darkcyan;
+}
+
+
+.inicio img{
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.checkbox{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    align-items: left;
+}
+
+#new_pass{
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: block;
+    color: darkorange;
+    font-weight: bolder;
+    
+
+}
+
+.sincuenta{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#registrarse{
+    margin-left: 10px;
+    cursor: pointer;
+    color: darkorange;
+    font-weight: bolder;
+    
+}
+
+/* ESTILO PARA REGISTRO DE USUARIO NUEVO */
+
+.registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(184, 184, 184);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 1.2);
+    border-radius: 35px;
+}
+
+.cuerpo_registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_logo{
+    height: calc(256px*1.7);
+}
+
+.imagen_logo img{
+    max-width: 75vh;
+    max-height: 75vh;
+    width: calc(256px * 1.7);
+    height:  calc(256px * 1.7);
+    margin-right: 5px;
+}
+
+.form_registro{
+    max-width: 75vh;
+    max-height: 75vh;
+    margin: 5px 10px 5px 5px;
+}
+
+.form_registro form{
+    display: flex;
+    flex-direction: column;
+}
+
+.registro label{
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.registro input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #777;
+    border-radius: 3px;
+}
+
+.registro button{
+    background-color: skyblue;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.registro button:hover{
+    background-color: darkcyan;
+}
+
+.registro p{
+    font-size: 1.1rem;
+}
+
+.registro p i{
+    cursor: pointer;
+    color: darkorange; 
+    font-weight: bolder;
+}
+
+/* PERFIL */
+
+.body_perfil{
+    margin:15px;
+}
+
+.personal{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "banner notif"
+        "descr  notif"
+    ;
+}
+
+.icono_y_info{
+    grid-area: banner;
+    margin: 10px 0px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.icono_y_info ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.fotoUsuario{
+    width: calc(128px*0.7);
+    height: calc(128px*0.7);
+    margin: 7px;
+}
+
+#cerrar_sesion{
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.descripcion{
+    grid-area: descr;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.notif{
+    border: 1px solid black;
+    grid-area: notif;
+    margin: 10px 0px 10px 10px;
+}
+
+.nombre_usuario{
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.mangas_guardados{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* DESAPARECER ETIQUETA */
+
 .desactivado{
     display:none;
 }
