@@ -1,5 +1,5 @@
 //obtener todas las imagenes
-let imagenes = document.getElementsByTagName('img')
+let imagenes = document.getElementsByClassName('image-hover');
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 //obtener el elemento modal

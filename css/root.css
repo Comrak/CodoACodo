@@ -49,7 +49,6 @@ ul li img{
   }
   
   .navbarEle a {
-    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -72,7 +71,39 @@ ul li img{
   .active {
     background-color: black;
   }
+
+  .icon{
+    display: none;
+  }
+
   .fondoBanner{
     background-image: url("../img/banerejemplo1.webp");
     background-size: cover;
+  }
+
+  @media (max-width:860px) {
+    .navbarEle {
+      height: 5px;
+      width: 25px;
+    }
+    .icon{
+      display: block;
+    }
+    .text{
+      display: none;
+    }
+  }
+
+  @media (max-width:650px) {
+    .navbarEle {
+      height: 5px;
+      width: 25px;
+    }
+    .icon{
+      display: block;
+      margin: 1em;
+    }
+    .text{
+      display: none;
+    }
   }

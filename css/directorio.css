@@ -1,5 +1,8 @@
 /* hacer que el body ocupe la mayor parte de la pagina */
-
+body {
+    margin: 0;
+    height: 100%;
+}
 /* reglas del div principal*/
 .main_dir_div {
     background-color: black;
