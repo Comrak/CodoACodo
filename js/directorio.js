@@ -9,7 +9,7 @@ let derecha = document.getElementById('right')
 // obtengo la flecha izquierda
 let izquierda = document.getElementById('left')
 //agrego variable url y la seteo en ../img/
-let urlRoot = "../img/"
+let urlRoot = "img/"
 let pagina = 1
 //tomo el elemento img del modal
 let imgModal = document.getElementById('imgReader')
