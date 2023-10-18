@@ -62,6 +62,10 @@ textarea {
     transition: var(--transition);
 }
 
+.button:hover{
+    cursor: pointer;
+}
+
 footer {
     background-color: #444444;
     color: #EDEDED;
