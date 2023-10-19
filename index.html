@@ -6,62 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>ManganZone</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/miestilo.css">
-    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <!--<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/miestilo.css">-->
     <script src="https://kit.fontawesome.com/0682a3a935.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="img/IconoLogo.ico">
 </head>
 
 <body>
-    <nav class="fondoBanner">
-        <!-- Logo -->
-        <a href="./index.html" class="color"><img class="logo" src="../img/logo.png" alt="NOMBRE PAGINA"></a>
-        <ul class="navbar">
-            <li class="navbarEle text"><a class="active" href="index.html">Home</a></li>
-            <li class="navbarEle text"><a class="active" href="directorio.html">Directorio de mangas</a></li>
-            <li class="navbarEle text"><a class="active" href="rankings.html">Ranking</a></li>
-            <li class="navbarEle text"><a class="active" href="contacto.html">Contacto</a></li>
-            <li class="navbarEle text"><a class="active" href="perfil.html">Registrese</a></li>
-            <li class="navbarEle icon"><a class="active" href="index.html"><i title="Home" class="fa-solid fa-house"></i></a></li>
-            <li class="navbarEle icon"><a class="active" href="directorio.html"><i title="mangas" class="fa-solid fa-book-skull"></i></a></li>
-            <li class="navbarEle icon"><a class="active" href="rankings.html"><i title="rankings"class="fa-solid fa-star"></i></a></li>
-            <li class="navbarEle icon"><a class="active" href="contacto.html"><i title="contacto"class="fa-solid fa-phone"></i></a></li>
-            <li class="navbarEle icon"><a class="active" href="perfil.html"><i title="registrese"class="fa-regular fa-id-badge"></i></a></li>            
-        </ul>
-    </nav>
     <header>
-        <div class="orden">
-            <div class="onepiece">
-                <img src="img/onepiece.avif" alt="Besto Mango">
-                <p>
-                    One Piece Cap. 1088 Ult. Agregado
-                </p>
-            </div>
-            <div class="narutoybleach">
-                <div class="naruto">
-                    <img src="img/naruto.jpg" alt="">
-                    <p>
-                        Naruto Cap 452 Ult. Agregado
-                    </p>
-                </div>
-                <div class="bleach">
-                    <img src=img/bleach.webp" alt="">
-                    <p>
-                        Bleach Cap 452 Ult. Agregado
-                    </p>
-                </div>
-                
-
-                
-            </div>
-        </div>
+        <nav class="nav-fondo">
+            <a href="./index.html" class="color"><img class="logo" src="../img/logo.png" alt="NOMBRE PAGINA"></a>
+            <ul class="navbar">
+                <li class="navbarEle text"><a class="active" href="index.html">Home</a></li>
+                <li class="navbarEle text"><a class="active" href="directorio.html">Directorio de mangas</a></li>
+                <li class="navbarEle text"><a class="active" href="rankings.html">Ranking</a></li>
+                <li class="navbarEle text"><a class="active" href="contacto.html">Contacto</a></li>
+                <li class="navbarEle text"><a class="active" href="perfil.html">Registrese</a></li>
+                <li class="navbarEle icon"><a class="active" href="index.html"><i title="Home" class="fa-solid fa-house"></i></a></li>
+                <li class="navbarEle icon"><a class="active" href="directorio.html"><i title="mangas" class="fa-solid fa-book-skull"></i></a></li>
+                <li class="navbarEle icon"><a class="active" href="rankings.html"><i title="rankings"class="fa-solid fa-star"></i></a></li>
+                <li class="navbarEle icon"><a class="active" href="contacto.html"><i title="contacto"class="fa-solid fa-phone"></i></a></li>
+                <li class="navbarEle icon"><a class="active" href="perfil.html"><i title="registrese"class="fa-regular fa-id-badge"></i></a></li>            
+            </ul>
+        </nav>
     </header>
-    <main>
+    
+    <main class="main">
+        <section class="textodestacado">
+            <h2>Explora el emocionante mundo de los mangas</h2>
+            <p>Bienvenido a ManganZone, tu destino para descubrir y disfrutar de una amplia variedad de mangas emocionantes.</p>
+            <p>Sumérgete en historias épicas, conoce a personajes inolvidables y vive aventuras que te transportarán a mundos increíbles.</p>
+            <p>Desde los clásicos atemporales hasta los últimos lanzamientos, tenemos algo para todos los amantes del manga. Navega por nuestro directorio, descubre tus nuevos favoritos y únete a una comunidad apasionada de entusiastas del manga.</p>
+            <br><br><br>
 
+            <div class="contenedor-imagenes">
+                <img src="img/bleach.webp" alt="Imagen 1">
+                <img src="img/naruto.jpg" alt="Imagen 2">
+                <img src="img/hxhByN.jpeg" alt="Imagen 2">
+            </div>
+            <div class="contenedor-imagenes">
+                <img src="img/NarutoColor.jpeg" alt="Imagen 1">
+                <img src="img/bleachColor.jpeg" alt="Imagen 2">
+                <img src="img/onePieceColor.jpeg" alt="Imagen 2">
+            </div>
+            
+            <br><br><br>
+
+            <div class="mangas-conocidos">
+                <h2>Mangas Más Conocidos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Género</th>
+                            <th>Año de Creación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>One Piece</td>
+                            <td>Eiichiro Oda</td>
+                            <td>Acción, Aventura, Fantasía</td>
+                            <td>1997</td>
+                        </tr>
+                        <tr>
+                            <td>Golgo 13</td>
+                            <td>Takao Saito</td>
+                            <td>Acción, Meitantei</td>
+                            <td>1968</td>
+                        </tr>
+                        <tr>
+                            <td>Detective Conan</td>
+                            <td>Gōshō Aoyama</td>
+                            <td>Suspenso, Misterio</td>
+                            <td>1994</td>
+                        </tr>
+                        <tr>
+                            <td>Dragon Ball</td>
+                            <td>Akira Toriyama</td>
+                            <td>Acción, Fantasía</td>
+                            <td>1984</td>
+                        </tr>
+                        <tr>
+                            <td>Doraemon</td>
+                            <td>Fujiko</td>
+                            <td>Comedia, ciencia ficción</td>
+                            <td>1969</td>
+                        </tr>
+                        <tr>
+                            <td>Naruto</td>
+                            <td>Masashi Kishimoto</td>
+                            <td>Acción, Aventura, Comedia, Fantasía</td>
+                            <td>1999</td>
+                        </tr>
+                    <tbody>
+                        
+                        <!-- Agrega más filas según sea necesario -->
+                    </tbody>
+                </table>
+            </div>
+            
+        </section>
+   
+
+        <aside class="sidebar">
+            <h2>Últimas Novedades</h2>
+            <ul>
+                <li><a href="https://tn.com.ar/show/cine-series/2023/09/04/llego-la-serie-one-piece-en-base-a-un-manga-japones-famoso-que-busca-ser-el-gran-exito-del-ano/"target="_blank">Netflix estrenó “One Piece”</a></li>
+                <li><a href="https://tn.com.ar/tecno/novedades/2021/12/15/por-que-se-celebra-el-15-de-diciembre-el-dia-mundial-del-otaku/" target="_blank">15 de diciembre el Día Mundial del Otaku</a></li>
+                <li><a href="https://tn.com.ar/show/cine-series/2022/04/30/los-ultimos-estrenos-de-anime-y-los-que-vienen/" target="_blank">Ultimos estrenos de animé</a></li>
+                <li><a href="https://tn.com.ar/videos/general/2022/09/05/de-dragon-ball-a-naruto-el-festival-de-cultura-japonesa-lleno-de-color-al-barrio-de-palermo/" target="_blank">Festival de Dragon Ball y Naruto en Palermo</a></li>
+                <li><a href="https://tn.com.ar/internacional/2021/02/08/murio-ricardo-silva-el-actor-de-doblaje-y-cantante-de-la-intro-de-dragon-ball-z/" target="_blank">El adios a Ricardo Silva, cantante y actor de doblaje de Dragon Ball Z</a></li>
+                <li><a href="https://tn.com.ar/tecno/internet/2020/05/29/attack-on-titan-mira-el-trailer-de-la-temporada-final-del-anime/" target="_blank">Mirá el tráiler de la ultima temporada de "Attack on Titan"</a></li>
+            </ul>
+        </aside>
+
+        
+   
     </main>
+   
     <footer>
-
+        <p> Copyright 2023</p>
     </footer>
 
 </body>
