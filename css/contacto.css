@@ -1,6 +1,8 @@
 body {
     background-color: #EDEDED;
     font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 22px;
 }
 
 .contacto {
