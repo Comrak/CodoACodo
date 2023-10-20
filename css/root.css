@@ -81,7 +81,7 @@ ul li img{
     background-size: cover;
   }
 
-  @media (max-width:1057px) {
+  @media (max-width:1062px) {
     .navbarEle {
       height: 5px;
       width: 25px;
