@@ -1,15 +1,8 @@
 
-*{
-   /* background-color: aqua;  */
-}
+
 nav{
     display: flex;
     justify-content: space-between;
-    /* background-color: #334f52; */
-}
-.logo{
-    margin: 1.5em ;
-    width: 6em ;
     /* background-color: #334f52; */
 }
 

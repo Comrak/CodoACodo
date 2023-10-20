@@ -1,4 +1,4 @@
-const url = 'https://myanimelist.p.rapidapi.com/manga/top/manga';
+/* const url = 'https://myanimelist.p.rapidapi.com/manga/top/manga';
 const topMangas = document.querySelector("#topMangas")
 const options = {
 	method: 'GET',
@@ -20,13 +20,4 @@ async function fetchData() {
 
 fetchData();
 
-fetch(url)
-    .then(response=>response.json())
-    .then(data => {
-        data.forEach(mangas => {
-            const li = document.createElement("li");
-            li.innerText = mangas.title;
-            topMangas.append(li);
-            
-        });
-    })
+ */
