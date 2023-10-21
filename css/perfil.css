@@ -4,7 +4,7 @@ label{
 }
 
 .sesion{
-    background-color: purple;
+    background-color: #EDEDED;;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +76,7 @@ label{
     margin-bottom: 10px;
     cursor: pointer;
     display: block;
-    color: darkorange;
+    color: #DA0037;
     font-weight: bolder;
     
 
@@ -91,7 +91,7 @@ label{
 #registrarse{
     margin-left: 10px;
     cursor: pointer;
-    color: darkorange;
+    color: #DA0037;
     font-weight: bolder;
     
 }
@@ -167,7 +167,7 @@ label{
 
 .registro p i{
     cursor: pointer;
-    color: darkorange; 
+    color: #DA0037; 
     font-weight: bolder;
 }
 
