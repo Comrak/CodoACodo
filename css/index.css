@@ -49,6 +49,10 @@ margin-bottom: 40px;
     font-weight: bold;
 }
 
+.sidebar a:hover {
+    color: #DA0037;
+}
+
 /*Texto Bienvenida*/
 .textodestacado {
     padding: 3rem;
