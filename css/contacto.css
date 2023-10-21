@@ -67,11 +67,3 @@ textarea {
 .button:hover{
     cursor: pointer;
 }
-
-footer {
-    background-color: #444444;
-    color: #EDEDED;
-    padding: 1.25rem;
-    text-align: center;
-    margin: 2rem 0 0;
-  }
