@@ -598,23 +598,29 @@ let data = [
 // }
 const topMangas = document.querySelector("#topMangas")
 data.forEach(mangas => {  
-    const titulo = document.createElement("h2");
-    const spacio = document.createElement("br");
-    const puntos = document.createElement("p");
-    const rango = document.createElement("p");
-    const img = document.createElement("img");
-    const li = document.createElement("li");
+    const titulo2 = document.createElement("h2");
+    const puntos2 = document.createElement("p");
+    const rango2 = document.createElement("p");
+    const img2 = document.createElement("img");
+    const section = document.createElement("section");
+    const titulo = document.createElement("article");
+    const puntos = document.createElement("article");
+    const rango = document.createElement("article");
+    const img = document.createElement("article");
     //aca les asigno los valores
-    rango.innerText = `el rango del manga es ${mangas.rank}`;
-    puntos.innerText = `el puntaje del manga es ${mangas.score}`;
-    img.src = mangas.image_url;
-    li.innerText = mangas.title;
-    titulo.innerText = "Top Mangas";
+    rango2.innerText = `El rango del manga es ${mangas.rank}`;
+    puntos2.innerText = `El puntaje del manga es ${mangas.score}`;
+    img2.src = mangas.image_url;
+    titulo2.innerText = mangas.title;
     //aca los agrego al HTML
-    topMangas.append(spacio);
-    topMangas.append(li);
-    li.append(titulo);
-    topMangas.append(img);
-    topMangas.append(puntos);
-    topMangas.append(rango);  
+    /* topMangas.append(spacio); */
+    topMangas.append(section);
+    section.append(img);
+    section.append(titulo)
+    section.append(puntos);
+    section.append(rango);
+    img.append(img2);
+    titulo.append(titulo2)
+    puntos.append(puntos2);
+    rango.append(rango2);  
 })
