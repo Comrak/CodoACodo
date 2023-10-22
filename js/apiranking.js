@@ -1,3 +1,62 @@
+/// LLAMADO A LA API QUEDA COMENTADO POR QUE LOS INTENTOS SON LIMITADOS
+// const url = 'https://myanimelist.p.rapidapi.com/manga/top/all';
+// const topMangas = document.querySelector("#topMangas")
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '23a3e5a543msh7242fcbf53bd8b4p16e73ejsnb375c61c88a9',
+// 		'X-RapidAPI-Host': 'myanimelist.p.rapidapi.com'
+// 	}
+// };
+
+// async function fetchData() {
+//     try {
+//         const response = await fetch(url, options);
+//         const result = await response.json();
+//         console.log(result);
+//         result.forEach(mangas => {
+//             //aca creo los elementos HTML
+//             const titulo2 = document.createElement("h2");
+//               const puntos2 = document.createElement("p");
+//               const rango2 = document.createElement("p");
+//               const img2 = document.createElement("img");
+//               const section = document.createElement("section");
+//               const titulo = document.createElement("article");
+//               const puntos = document.createElement("article");
+//               const rango = document.createElement("article");
+//               const img = document.createElement("article");
+//               //aca les asigno los valores
+//               rango2.innerText = `El rango del manga es ${mangas.rank}`;
+//               puntos2.innerText = `El puntaje del manga es ${mangas.score}`;
+//               img2.src = mangas.picture_url;
+//               img2.style.width = "50%";
+//               img2.style.height = "50%";
+//               titulo2.innerText = mangas.title;
+//               //aca los agrego al HTML
+//               /* topMangas.append(spacio); */
+//               topMangas.append(section);
+//               section.append(img);
+//               section.append(titulo)
+//               section.append(puntos);
+//               section.append(rango);
+//               img.append(img2);
+//               titulo.append(titulo2)
+//               puntos.append(puntos2);
+//               rango.append(rango2);  
+//         })
+        
+//     } catch (error) {
+//         console.error(error);
+//     }
+// }
+
+// fetchData();
+
+
+// aca estamos en modo de pruebas con un json statico
+
+
+
 let data = [
     {
       "title": "Berserk",
@@ -550,54 +609,10 @@ let data = [
       "members": 54777
     }
 ]
-
-// const url = 'https://myanimelist.p.rapidapi.com/manga/top/all';
-// const topMangas = document.querySelector("#topMangas")
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': '23a3e5a543msh7242fcbf53bd8b4p16e73ejsnb375c61c88a9',
-// 		'X-RapidAPI-Host': 'myanimelist.p.rapidapi.com'
-// 	}
-// };
-
-// async function fetchData() {
-//     try {
-//         const response = await fetch(url, options);
-//         const result = await response.json();
-//         console.log(result);
-//         result.forEach(mangas => {
-                //EL CODIGO DEL FOREACH VA ACA !!!!!!!!!
-
-
-//             //aca creo los elementos HTML
-//             const titulo = document.createElement("h2");
-//             const spacio = document.createElement("br");
-//             const puntos = document.createElement("p");
-//             const rango = document.createElement("p");
-//             const img = document.createElement("img");
-//             const li = document.createElement("li");
-//             //aca les asigno los valores
-//             rango.innerText = mangas.rank;
-//             puntos.innerText = mangas.score;
-//             img.src = mangas.image_url;
-//             li.innerText = mangas.title;
-//             titulo.innerText = "Top Mangas";
-//             //aca los agrego al HTML
-//             topMangas.append(spacio);
-//             topMangas.append(li);
-//             li.append(titulo);
-//             topMangas.append(img);
-//             topMangas.append(puntos);
-//             topMangas.append(rango);
-//         })
-        
-//     } catch (error) {
-//         console.error(error);
-//     }
-// }
 const topMangas = document.querySelector("#topMangas")
 data.forEach(mangas => {  
+  console.log(mangas);
+  console.log(mangas.image_url);
     const titulo2 = document.createElement("h2");
     const puntos2 = document.createElement("p");
     const rango2 = document.createElement("p");
@@ -610,7 +625,9 @@ data.forEach(mangas => {
     //aca les asigno los valores
     rango2.innerText = `El rango del manga es ${mangas.rank}`;
     puntos2.innerText = `El puntaje del manga es ${mangas.score}`;
-    img2.src = mangas.image_url;
+    img2.src = mangas.picture_url;
+    img2.style.width = "50%";
+    img2.style.height = "50%";
     titulo2.innerText = mangas.title;
     //aca los agrego al HTML
     /* topMangas.append(spacio); */
