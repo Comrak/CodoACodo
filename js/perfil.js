@@ -114,15 +114,14 @@ document.addEventListener("DOMContentLoaded", function () {
     
     function validarCredenciales(mail, pass) {
         for (var i = 0; i < usuarios.length; i++) {
-            if (usuarios[i].Email == mail) {
-                if (usuarios[i].password == pass) {
+            if (usuarios[i].Email == mail && usuarios[i].password == pass) {
+                // if (usuarios[i].password == pass) {
                     return true; // Se encontró una coincidencia
-                }else{
-                    return false
-                }
+                // }
             }
-            return false; // No se encontró ninguna coincidencia
+            
         }
+        return false; // No se encontró ninguna coincidencia
     }
     function crearUsuario(usname, mail, pass) {
         usuarios.push({
@@ -131,16 +130,17 @@ document.addEventListener("DOMContentLoaded", function () {
             Email: String(mail),
             password: String(pass)
         })
+        console.log(usuarios[(usuarios.length-1)])
     }
 
     function reiniciarDatos() {
-        iniciomail.textContent = ""
-        iniciopass.textContent = ""
-        regis_mail.textContent = ""
-        conf_mail.textContent = ""
-        regis_username.textContent = ""
-        regis_pass.textContent = ""
-        conf_pass.textContent = ""
+        iniciomail.innerText = ""
+        iniciopass.innerText = ""
+        regis_mail.innerText = ""
+        conf_mail.innerText = ""
+        regis_username.innerText = ""
+        regis_pass.innerText = ""
+        conf_pass.innerText = ""
     }
 
     function mostrarInicio() {
@@ -196,7 +196,6 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (txt_regis_pass == txt_conf_pass) {
                 crearUsuario(txt_regis_username, txt_regis_mail, txt_regis_pass)
                 alert(`Cuenta creada con exito.`)
-                console.log(sumarID())
                 mostrarInicio()
             }
         }

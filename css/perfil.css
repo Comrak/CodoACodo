@@ -134,16 +134,16 @@ label{
 .form_registro form{
     display: flex;
     flex-direction: column;
+
 }
 
 .registro label{
     text-align: left;
-    margin-bottom: 5px;
 }
 
 .registro input{
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
     border: 1px solid #777;
     border-radius: 3px;
 }

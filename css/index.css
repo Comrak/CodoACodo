@@ -25,7 +25,7 @@ body {
 
 .sidebar h2 {
     color: #DA0037;
-    font-size: 1.5rem;
+    font-size: 1,3em;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -66,7 +66,7 @@ margin-bottom: 40px;
 
 .textodestacado h2 {
     color: #DA0037;
-    font-size: 2.5rem;
+    font-size: 1,9em;
     text-align: center;
 }
 
@@ -88,7 +88,7 @@ margin-bottom: 40px;
 
 .mangas-conocidos h2 {
     color: #DA0037;
-    font-size: 2rem;
+    font-size: 1,9em;
     text-align: center;
 }
 
